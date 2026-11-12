@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.container h2 {
+  color: #2c3e50;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.add-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.add-input, .edit-input {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.add-input:focus, .edit-input:focus {
+  border-color: #4a90e2;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  min-height: 58px;
+}
+
+.edit-form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 12px; 
+}
+
+.edit-input {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 2px solid #4a90e2;
+  border-radius: 8px;
+  outline: none;
+}
+
+.task-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.task-text {
+  flex: 1;
+  font-size: 15px;
+  color: #333333;
+  word-break: break-word;
+  margin-right: 15px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.btn-add {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.btn-edit {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+.btn-delete {
+  background-color: #d9534f;
+  color: white;
+}
+
+.btn-save {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.btn-cancel {
+  background-color: #6c757d;
+  color: white;
+}
